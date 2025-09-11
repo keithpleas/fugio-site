@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fugio — Property Management • Cle Elum, WA</title>
+  <meta name="description" content="Fugio LLC — Property management for a distinctive Cle Elum property. The name comes from the 1787 Fugio cent, attributed to Benjamin Franklin: ‘Mind Your Business.’" />
+  <meta property="og:title" content="Fugio — Property Management" />
+  <meta property="og:description" content="Property management for a distinctive Cle Elum property. ‘Mind Your Business.’" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.fugio.com/" />
+  <meta property="og:image" content="/assets/fugio-cent.png" />
+  <style>
+    :root {
+      --bg: #0f172a;      /* slate-900 */
+      --card: #111827;    /* gray-900 */
+      --text: #e5e7eb;    /* gray-200 */
+      --muted: #94a3b8;   /* slate-400 */
+      --accent: #f59e0b;  /* amber-500 */
+      --accent-2: #fbbf24;/* amber-400 */
+      --ring: rgba(245, 158, 11, 0.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 10% -10%, #1f2937 0%, var(--bg) 40%),
+                  radial-gradient(800px 600px at 110% 10%, #1f2937 0%, var(--bg) 50%),
+                  var(--bg);
+      color: var(--text);
+    }
+    a { color: inherit; text-underline-offset: 2px; }
+    .container { max-width: 1080px; margin: 0 auto; padding: 24px; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+    .logo {
+      width: 48px; height: 48px; border-radius: 999px; display: grid; place-items: center;
+      background: radial-gradient(circle at 30% 30%, #c2410c 0%, #92400e 35%, #78350f 70%, #451a03 100%);
+      box-shadow: inset 0 0 0 2px rgba(0,0,0,.2), 0 10px 24px rgba(0,0,0,.35);
+      position: relative; overflow: hidden;
+    }
+    .logo::after {
+      content: "F"; font-weight: 700; color: #ffedd5; letter-spacing: 1px; font-size: 20px;
+      text-shadow: 0 1px 0 #7c2d12, 0 0 12px rgba(0,0,0,.5);
+    }
+    .brand h1 { font-size: 20px; margin: 0; letter-spacing: .4px; }
+    .brand small { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+    nav a { padding: 10px 14px; border-radius: 999px; text-decoration: none; color: var(--muted); }
+    nav a:hover { background: rgba(255,255,255,.06); color: var(--text); }
+
+    .hero { padding: 72px 0 32px; text-align: center; }
+    .hero h2 { font-size: clamp(28px, 4.5vw, 46px); margin: 10px 0 12px; }
+    .hero p { color: var(--muted); font-size: clamp(16px, 2.5vw, 20px); max-width: 850px; margin: 0 auto; }
+    .badge { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.03); color: var(--accent-2); }
+    .cta { margin-top: 28px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn { padding: 12px 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,.12); background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03)); color: var(--text); text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+    .btn:hover { border-color: var(--accent); box-shadow: 0 0 0 4px var(--ring); }
+    .btn.primary { background: linear-gradient(180deg, #f59e0b, #b45309); border: none; color: #111827; font-weight: 600; }
+    .btn.primary:hover { filter: brightness(1.05); box-shadow: 0 0 0 4px var(--ring); }
+
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.08); border-radius: 18px; padding: 22px; box-shadow: 0 10px 24px rgba(0,0,0,.25); }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
+
+    .section { padding: 36px 0; }
+    .section h3 { margin: 0 0 12px; font-size: 22px; letter-spacing: .3px; }
+    .muted { color: var(--muted); }
+
+    .links ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+    .links a { text-decoration: none; }
+    .links li { padding: 14px 16px; border-radius: 12px; border: 1px dashed rgba(255,255,255,.18); }
+    .links li:hover { border-style: solid; border-color: var(--accent); box-shadow: inset 0 0 0 1px rgba(245, 158, 11, .3); }
+
+    footer { padding: 32px 0 64px; color: var(--muted); font-size: 14px; text-align: center; }
+    .footer-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .tiny { font-size: 12px; opacity: .9; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#top" aria-label="Fugio Home">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Fugio</h1>
+          <small>Property Management • Cle Elum, WA</small>
+        </div>
+      </a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#history">The Name</a>
+        <a href="#links">Links</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="badge">Mind your business — est. 1990s • revived 2025</div>
+        <h2>Stewardship for a distinctive Cle Elum retreat</h2>
+        <p>
+          Fugio LLC manages a single architect‑designed property in the Yakima River valley near Cle Elum, Washington.
+          We're building thoughtfully: clear standards, meticulous maintenance, and guest experiences that feel personal.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#history">About the name “Fugio”</a>
+          <a class="btn" href="#links">Explore links</a>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="grid">
+          <div class="card">
+            <h3>What is Fugio?</h3>
+            <p class="muted">
+              <strong>Fugio</strong> was the banner for a Seattle import store in the late 1990s. Today it's our
+              umbrella for property management of a unique Cle Elum home. We focus on quiet reliability over scale: a
+              tight operations checklist, transparent communications, and the right tools (smart locks, environmental
+              monitoring, and preventive maintenance) to keep the home in excellent condition.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Availability</h3>
+            <p class="muted">
+              Listings are coming soon. In the meantime, you can reach out directly if you're interested in future
+              availability or collaboration. We welcome respectful pets and provide complimentary EV charging.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="history">
+        <div class="card">
+          <h3>The “Fugio” name & the 1787 cent</h3>
+          <p class="muted">
+            The word <em>Fugio</em> (“I flee” / “time flies”) appears on a 1787 copper coin commonly called the
+            <strong>Fugio cent</strong>, attributed to Benjamin Franklin. Its paired mottoes — a sun and sundial with
+            “<em>Fugio</em>” and the ribboned reminder <strong>“Mind Your Business”</strong> — are often read together as
+            an encouragement to focus on your work and the time at hand. The design is in the public domain; we use a
+            modern graphic echo of the coin as our mark.
+          </p>
+          <p class="tiny">Note: the historical motto is “Mind <strong>Your</strong> Business,” not “mind your own business.”</p>
+        </div>
+      </section>
+
+      <section class="section links" id="links">
+        <div class="grid">
+          <div class="card">
+            <h3>Related links</h3>
+            <ul>
+              <li><a href="https://www.lanewilliams.com/" rel="noopener" target="_blank">Architect Lane Williams — firm site</a></li>
+              <li><a href="https://fugio.azurewebsites.net/" rel="noopener" target="_blank">Current app service endpoint</a></li>
+              <li><a href="https://www.keithpleas.com/" rel="noopener" target="_blank">Legacy site (keithpleas.com)</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Press & notes</h3>
+            <p class="muted">Selected write‑ups and background will be added here as the property comes online.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="card">
+          <h3>Get in touch</h3>
+          <p class="muted">Questions, vendor inquiries, or booking interest? Email <a href="mailto:hello@fugio.com">hello@fugio.com</a>.</p>
+          <p class="tiny">If you prefer text or a phone call, include your number and the best time to reach you.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-row">
+        <span>© <span id="y"></span> Fugio LLC</span>
+        <span>•</span>
+        <span>Cle Elum, Washington</span>
+      </div>
+      <div class="tiny">The coin image is a stand‑in; replace <code>/assets/fugio-cent.png</code> with your preferred artwork.</div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
